@@ -8,12 +8,25 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
+		"types": [
+			"file-saver"
+		],
+		"typeRoots": [
+			"node_modules/@types",
+			"node_modules"
+		],
+		"lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "strictNullChecks": false,
+    "baseUrl": "./",
+    "paths": {
+      "@cmi/viaduc-web-core": [
+        "../cmi-viaduc-web-core/src/*"
+      ]
+    }
   }
 }
