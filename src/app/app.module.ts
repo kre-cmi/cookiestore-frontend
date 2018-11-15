@@ -8,6 +8,8 @@ import {CookieComponent} from './cookie/cookie.component';
 import {GrandmaComponent} from './grandma/grandma.component';
 import {IngredientsComponent} from './ingredients/ingredients.component';
 import {RouterModule} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+import {TileComponent} from './tile/tile.component';
 
 const appRoutes = [
   { path: 'cookie', component: CookieComponent },
@@ -21,10 +23,12 @@ const appRoutes = [
     NavigationComponent,
     CookieComponent,
     GrandmaComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true, useHash: true } // <-- debugging purposes only

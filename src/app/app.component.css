@@ -1,0 +1,10 @@
+.navigation {
+  border-right: hotpink solid 1px;
+  padding-right:  50px;
+  float: left;
+}
+
+.content {
+  float:left;
+  margin: 0 20px 20px 20px;
+}
